@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editing Aura — Pricing + Form</title>
+    <title>Editing Aura</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         :root{--bg:#0a0a0a;--bg-soft:#111;--accent:#0080ff;--accent-glow:#00c6ff;--text:#ffffff;--text-soft:#b3b3b3;--radius:12px;--font:'Inter',sans-serif}
         *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
@@ -25,7 +24,8 @@
         nav .container{display:flex;align-items:center;justify-content:space-between}
         .logo{font-size:1.5rem;font-weight:700;color:var(--accent)}
         .nav-links{display:flex;gap:1.5rem;font-size:.95rem}
-        .nav-links a{color:var(--text-soft);transition:.2s}.nav-links a:hover{color:var(--accent)}
+        .nav-links a{color:var(--text-soft);transition:.2s}
+        .nav-links a:hover{color:var(--accent)}
 
         section{padding:5rem 0}h2{font-size:2.2rem;font-weight:700;text-align:center;margin-bottom:2.5rem}
         .grid{display:grid;gap:2rem}.grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
@@ -40,17 +40,9 @@
 
         .testimonial-card{background:var(--bg-soft);border-radius:var(--radius);padding:2.5rem;position:relative}
         .testimonial-card::before{content:'“';position:absolute;top:.5rem;left:1rem;font-size:4rem;color:var(--accent);opacity:.3}
-        .testimonial-card p:last-child{margin-top:1rem;font-weight:600;color:var(--accent)}
 
-        /* ========= PRICING CARDS ========= */
-        .pricing-card{
-            background:var(--bg-soft);
-            border-radius:var(--radius);
-            padding:2.5rem 2rem;
-            text-align:center;
-            position:relative;
-            transition:.3s;
-        }
+        /* PRICING */
+        .pricing-card{background:var(--bg-soft);border-radius:var(--radius);padding:2.5rem 2rem;text-align:center;position:relative}
         .pricing-card:hover{transform:translateY(-6px)}
         .pricing-card h3{font-size:1.5rem;margin-bottom:.5rem}
         .price{font-size:2.4rem;font-weight:700;color:var(--accent)}
@@ -58,18 +50,12 @@
         .pricing-card ul{list-style:none;margin:1.5rem 0;text-align:left;color:var(--text-soft)}
         .pricing-card li{margin:.4rem 0}
         .pricing-card li:before{content:'✓';color:var(--accent);margin-right:.4rem}
-        .badge{
-            position:absolute;top:-12px;left:50%;transform:translateX(-50%);
-            background:var(--accent-glow);color:#000;padding:.3rem .9rem;
-            border-radius:20px;font-size:.8rem;font-weight:600
-        }
+        .badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--accent-glow);color:#000;padding:.3rem .9rem;border-radius:20px;font-size:.8rem;font-weight:600}
         .popular{transform:scale(1.05);border:2px solid var(--accent)}
-        @media(max-width:768px){.popular{transform:none}}
 
         .contact-grid{grid-template-columns:1fr 1fr}
         .contact-form input,.contact-form textarea{width:100%;padding:.9em 1em;margin-bottom:1rem;background:var(--bg-soft);border:1px solid #222;color:var(--text);border-radius:var(--radius)}
         .contact-form textarea{min-height:120px;resize:vertical}
-        .contact-info{display:flex;flex-direction:column;gap:1rem}
         .contact-item{display:flex;align-items:center;gap:.8rem;color:var(--text-soft)}
         .contact-item i{color:var(--accent)}
 
@@ -79,7 +65,6 @@
 </head>
 <body>
 
-<!-- HERO -->
 <header id="home">
     <div class="container">
         <h1>Editing Aura</h1>
@@ -91,7 +76,6 @@
     </div>
 </header>
 
-<!-- NAV -->
 <nav>
     <div class="container">
         <div class="logo">Aura</div>
@@ -127,7 +111,9 @@
     <div class="container">
         <h2>Showreel</h2>
         <div class="grid portfolio-grid">
-            <div class="portfolio-item"><iframe src="https://vimeo.com/1103584538" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="portfolio-item">
+                <iframe src="https://www.youtube.com/embed/sq4-IyhMSMQ" width="640" height="360" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 </section>
@@ -177,14 +163,12 @@
     </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
     <div class="container">
-        <p>&copy; 2025 Editing Aura. Built to be the last editor you’ll ever need.</p>
+        <p>&copy; 2025 Editing Aura. All rights reserved.</p>
     </div>
 </footer>
 
-<!-- Instagram Floating Button -->
 <a class="ig-float" href="https://www.instagram.com/editing_aura_official/" target="_blank"><i class="fab fa-instagram"></i></a>
 
 </body>
