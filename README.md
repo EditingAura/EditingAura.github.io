@@ -1,10 +1,16 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editing Aura</title>
+    <title>Editing Aura – Portfolio & Pricing</title>
+
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 CDN (icons restored!) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         :root{--bg:#0a0a0a;--bg-soft:#111;--accent:#0080ff;--accent-glow:#00c6ff;--text:#ffffff;--text-soft:#b3b3b3;--radius:12px;--font:'Inter',sans-serif}
         *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
@@ -30,19 +36,14 @@
         section{padding:5rem 0}h2{font-size:2.2rem;font-weight:700;text-align:center;margin-bottom:2.5rem}
         .grid{display:grid;gap:2rem}.grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
 
+        /* SERVICES */
         .service-card{background:var(--bg-soft);border-radius:var(--radius);padding:2.5rem 2rem;text-align:center;transition:.3s}
         .service-card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,128,255,.15)}
         .service-card i{font-size:2.5rem;color:var(--accent);margin-bottom:1rem}
         .service-card h3{font-size:1.3rem;margin-bottom:.6rem}
 
-        .portfolio-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
-        .portfolio-item iframe{width:100%;aspect-ratio:16/9;border:none;border-radius:var(--radius)}
-
-        .testimonial-card{background:var(--bg-soft);border-radius:var(--radius);padding:2.5rem;position:relative}
-        .testimonial-card::before{content:'“';position:absolute;top:.5rem;left:1rem;font-size:4rem;color:var(--accent);opacity:.3}
-
         /* PRICING */
-        .pricing-card{background:var(--bg-soft);border-radius:var(--radius);padding:2.5rem 2rem;text-align:center;position:relative}
+        .pricing-card{background:var(--bg-soft);border-radius:var(--radius);padding:2.5rem 2rem;text-align:center;position:relative;transition:.3s}
         .pricing-card:hover{transform:translateY(-6px)}
         .pricing-card h3{font-size:1.5rem;margin-bottom:.5rem}
         .price{font-size:2.4rem;font-weight:700;color:var(--accent)}
@@ -169,6 +170,7 @@
     </div>
 </footer>
 
+<!-- Floating Instagram Button -->
 <a class="ig-float" href="https://www.instagram.com/editing_aura_official/" target="_blank"><i class="fab fa-instagram"></i></a>
 
 </body>
