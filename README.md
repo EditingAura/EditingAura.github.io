@@ -1,4 +1,3 @@
-# EditingAura.github.io
 
 <html lang="en">
 <head>
